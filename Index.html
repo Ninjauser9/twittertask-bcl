@@ -86,9 +86,21 @@
 					</fieldset>
 				
 				</form>
-			</div>
 		</div>
 	</div>
+	<div class="accordion" id="questions">
+		<div class="accordion-group">
+		
+			<div class="accordion-heading">
+				<a class="accordion-toggle btn" data-toggle="collapse" data-parent="#questions" href="#who">Who?</a>
+			</div>
+		<div id="who" class="accordion-body collapse">
+			<div class="accordion-inner">
+			<p>bootlegtwitter</p>
+			
+		</div>
+		
+	
 	<div class="span8"></div>
 	
 	
@@ -110,6 +122,7 @@
 	<div class="modal-body">
   
 		<form>
+			<p class="label label-info">required</p>
 			<div class="controls controls-row">
 				<input type="text" class="span2" placeholder="first name">
 				<input type="text" class="span2" placeholder="last name">
@@ -120,7 +133,28 @@
 				</select>
 				
 			</div>
-		
+			<div class="controls control-group info">
+			<input type="text" class="span5" placeholder="username" id="inputinfo">
+			<input type="text" class="span5" placeholder="email" id="inputinfo">
+			<input type="text" class="span5" placeholder="confirm email" id="inputinfo">
+			</div>
+			
+			<p class="help-block">I love to learn about:
+			<a href="#" id="tip" rel="tooltip" data-animation="true" data-original-title="cool top" data-placement="right">Tip</a>
+			<p>
+			
+			<label class="checkbox inline">
+						<input type="checkbox">HTML/CSS
+						</label>
+			<label class="checkbox inline">
+						<input type="checkbox">Javascript
+						</label>
+			<label class="checkbox inline">
+						<input type="checkbox">PHP
+						</label>
+
+			
+			
 		</form>
   
 	</div>
@@ -137,5 +171,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		s("#tip").tooltip();
   </body>
 </html>
